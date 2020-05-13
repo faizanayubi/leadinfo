@@ -1,0 +1,27 @@
+{
+	"name": "LeadInfo",
+	"version": "1.0",
+	"description": "Get Lead Details from Linkedin and add to SalesFlare",
+	"permissions": ["storage"],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"page_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/leadinfo16.png",
+			"32": "images/leadinfo32.png",
+			"48": "images/leadinfo48.png",
+			"128": "images/leadinfo128.png"
+		}
+	},
+	"icons": {
+		"16": "images/leadinfo16.png",
+		"32": "images/leadinfo32.png",
+		"48": "images/leadinfo48.png",
+		"128": "images/leadinfo128.png"
+	},
+	"manifest_version": 2,
+	"author": "Faizan Ayubi"
+}
