@@ -1,12 +1,14 @@
 {
 	"name": "LeadInfo",
-	"version": "1.0",
+	"version": "0.1",
 	"description": "Get Lead Details from Linkedin and add to SalesFlare",
-	"permissions": ["storage"],
-	"background": {
-		"scripts": ["background.js"],
-		"persistent": false
-	},
+	"permissions": ["activeTab"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["jquery-3.5.1.slim.min.js", "popper.min.js", "bootstrap.min.js", "page.js"]
+		}
+	],
 	"page_action": {
 		"default_popup": "popup.html",
 		"default_icon": {
