@@ -1,1 +1,4 @@
-alert("Hello from your Chrome extension!");
+console.log('hello');
+$('#btn').click(function(e) {
+	console.log('click');
+});
